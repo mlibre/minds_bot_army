@@ -10,7 +10,7 @@
 	"cronEveryMin": 35,
 	"cronEveryHour": 6,
 	"botRunChance": 19,
-	"mostTrustedUsers": ["mforgood"],
+	"mostTrustedUsers": ["mforgood" , "loveandlive"],
 	"useComUser": false,
 	"likeRunPos": 6,
 	"postRunPos": 6,
