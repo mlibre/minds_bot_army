@@ -1,0 +1,13 @@
+node_modules/puppeteer/.local-chromium/linux-674921/chrome-linux/chrome
+**/chromData/
+node_modules/
+datas/
+**/mforgood/**
+**/heroku/**
+**/farshadjan/**
+**/loveandlive/**
+**/heroku_mforgood/**
+**/heroku_farshad/**
+heroku_farshad/
+heroku_mforgood/
+heroku/
