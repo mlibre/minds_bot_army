@@ -278,7 +278,8 @@ exports.login = async function (page, username, password)
 		await exports.randomSleep(1,2);
 		await page.type('#password' , password , {delay: 50});
 		await exports.randomSleep(1,2);
-		let submitSel = "m-login > div > div > div > minds-form-login > form > div.mdl-card__actions > button";
+		let submitSel = "m-login > div > div > div > minds-form-login > form > div.mdl-card__actions > m-shadowboxsubmitbutton"
+		// let submitSel = "m-login > div > div > div > minds-form-login > form > div.mdl-card__actions > button";
 		await exports.waitAndClick(page , submitSel);
 		await exports.randomWaitfor(page);
 		await exports.randomWaitFull(page, 3 , 8, 4000);
