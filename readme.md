@@ -26,7 +26,7 @@ npm install
 # npm rebuild
 nano defaults.json # set botRunChance and runOnStart and mostTrustedUsers and other options
 # Now you need to define your users.
-# for each user u need to create a folder like users/USERNAME in the users folder. And set the user account settings
+# For each user u need to create a folder like users/USERNAME in the users folder. And set the user account settings
 ~~~
 ## Tor
 If you want to use tor:
@@ -50,6 +50,7 @@ pm2 startup
 pm2 start bot_army.js --name minds_bot
 pm2 save
 ~~~
+
 ## Single Account
 To run as a single bot - account:
 ~~~bash
@@ -58,29 +59,25 @@ node bot.js -u username  -c -h
 node bot.js -u username -p password -h -c
 ~~~
 
-# Heroku
+# Heroku Settings
 ```bash
-# package.json: "puppeteer": "2.1.1",
-# "engines": {
-#   "node": "latest",
-#   "npm": "latest"
-# },
+# In package.json: "puppeteer": "2.1.1",
 # sudo rm -r .git
 # heroku buildpacks:clear
 # heroku git:remote -a nodejstestappp
 # heroku ps:scale web=1
 # heroku restart
 # heroku apps:destroy mindscombot
+# heroku logs --tail
 rm package-lock.json
 heroku login -i
 heroku create mindscombot
-# copy the output link to sec.json
+# copy the output link to info.json
 git add --all
 git commit -m "first message"
 heroku buildpacks:add --index 1 https://github.com/jontewks/puppeteer-heroku-buildpack
 heroku buildpacks:add --index 1 heroku/nodejs
 git push heroku master
-heroku logs --tail
 ```
 
 # Configuration
