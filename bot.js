@@ -28,8 +28,8 @@ let isRunning = true;
 let users = [];
 let mostTrustedUsers = defaults.mostTrustedUsers;
 
-const likePossibility = 7000;
-const repostPossibility = 15000;
+const likePossibility = 12000;
+const repostPossibility = 22000;
 const commentPossibility = 1700000;
 const likeNoThHigh = 100;
 const likeNoThHighPos = 1.01;
