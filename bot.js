@@ -349,7 +349,7 @@ async function run()
 	await common.closingBrowser(browser, page);
 	console.log('Done :)');
 	isRunning = false;
-	process.exit(-2);
+	// process.exit(-2);
 	return "OK";
 }
 
@@ -400,5 +400,7 @@ try
 catch (error)
 {
 	console.log(error);
-	process.exit(-2);
+	// process.exit(-2);
+	return "OK";
+
 }
