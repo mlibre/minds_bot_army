@@ -49,11 +49,6 @@ async function run(likesCounts, postsCounts, onlineLikes=[], onlinePosts=[])
 				console.log('Could not find a choice for posts, the user is already having another process!');
 				// console.log(usersPosted, onlineLikes, UP);
 			}
-			else if(random.int(1,defaults.postRunPos) > 2)
-			{
-				onlinePosts.push(UP);
-				runPm2forPosts(UP);
-			}
 		}
 	}
 	if(likesCounts < defaults.maxConCurrentLike)
@@ -124,35 +119,6 @@ async function runPm2ForLikes(username)
 			if (err) throw err
 		});
 		// console.log(users);
-	});
-}
-async function runPm2forPosts(username)
-{
-	// console.log('Starting pm2 for posting for', username);
-	pm2.connect(function(err)
-	{
-		if (err)
-		{
-			console.error(err);
-			process.exit(2);
-		}
-		console.log("Starting Posting for" , username);
-		pm2.start(
-		{
-			name: `post for ${username}`,
-			script: 'posting.js',
-			args: [username],
-			output: `./users/${username}/postout.log`,
-			error: `./users/${username}/postout.log`,
-			max_memory_restart: '300M',
-			force: false,
-			autorestart: false,
-		},
-		function(err, apps)
-		{
-			pm2.disconnect();   // Disconnects from PM2
-			if (err) throw err
-		});
 	});
 }
 

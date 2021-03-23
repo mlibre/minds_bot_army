@@ -3,11 +3,10 @@
 Most **advanced Bot-Army** for **minds.com**. Designed to earn tokens automatically for **minds.com**.
 You can use as **one bot** for one account or you can give it multiple accounts (an army) to earn hundreds token per day.
 Features:
-* Auto Posting
 * Automatic liking
 * Auto Commenting
 * Targeting specific Accounts
-* Auto earn :money_with_wings:
+* Auto earn
 * Autorun
 * Scheduling
 * Can use tor out-of-box
@@ -25,8 +24,8 @@ git clone https://github.com/mlibre/minds_bot_army.git
 npm install
 # npm rebuild
 nano defaults.json # set botRunChance and runOnStart and mostTrustedUsers and other options
-# Now you need to define your users.
-# For each user u need to create a folder like users/USERNAME in the users folder. And set the user account settings
+# Now define your users.
+# For each user u should create a folder like users/USERNAME in the users folder. And set the user account settings
 ~~~
 ## Tor
 If you want to use tor:

@@ -13,7 +13,6 @@
 	"mostTrustedUsers": ["mforgood" , "loveandlive"],
 	"useComUser": false,
 	"likeRunPos": 6,
-	"postRunPos": 6,
 	"noPostToReview": 100,
 	"noPostToPost": 7,
 	"runOnStart": false,
