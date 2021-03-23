@@ -15,7 +15,7 @@ if(process.argv[2] != undefined)
 	defaults.cronEveryMin = process.argv[2];
 }
 
-console.log('I need to rest for 10 second :)');
+console.log('I am gonna rest for 10 second :)');
 sleep.sleep(10);
 
 
