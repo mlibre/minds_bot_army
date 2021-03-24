@@ -99,8 +99,7 @@ Using `tor` and `headless` are `false` by default, you can set them to true.
 "posting": false // Where user use post.json file to post or not
 ```
 
-Donate
-=======
 Donate or .... :heartpulse:
+=======
 ETH:
 > 0xc9b64496986E7b6D4A68fDF69eF132A35e91838e
