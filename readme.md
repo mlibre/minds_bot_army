@@ -94,11 +94,6 @@ Using `tor` and `headless` are `false` by default, you can set them to true.
 "torRange": [50,50] // tor ports. if you have SocksPort 9050 -> SocksPort 9054 then set this option to [50,54]
 ```
 
-### Important Local options
-```javascript
-"posting": false // Where user use post.json file to post or not
-```
-
 Donate or .... :heartpulse:
 =======
 ETH:

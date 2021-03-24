@@ -64,7 +64,6 @@
 	"postToReview": 50,
 	"noPostToPost": 5,
 	"noRePost": false,
-	"posting": false,
 	"useTor": true,
 	"tweet": false,
 	"args": [],
